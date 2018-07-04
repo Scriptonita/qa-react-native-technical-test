@@ -30,7 +30,7 @@ Please use credentials from `Valid users` section of this doc.
 > **Put all your thoughts inside the answer!!**
 
 It is not required to create additional scenarios, but any extra work will be considered as a plus. Would be great to use boundary testing!)
-Please document and let us know how would you implement any extra relevant feature that is not covered in the test (reporting, logging ...) 
+Please document and let us know how would you implement any extra relevant feature that is not covered in the test (reporting, logging ...)
 
 ## Deliverable
 * **Source Code**: Either of the following ways to bundle the code, whatever is easier for you:
@@ -73,6 +73,17 @@ yarn --version
 In case you haven't installed Yarn, you can follow the instruction to install in your OS:
 [How to install Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 
+##### `npm install`
+
+It is the first command that you have to run for install required packages to run the application.
+
+```
+npm install
+# or
+yarn install
+```
+
+
 #### `npm start`
 ```
 npm start --reset-cache
@@ -104,6 +115,17 @@ npm run android
 yarn android
 ```
 
+#### `npm run web`
+
+```
+npm run web
+# or
+yarn web
+```
+
+You can find the project running at _http://localhost:8080/_
+
+
 #### `Builds Path`
 
 You can find your builds in the paths:
@@ -119,6 +141,10 @@ Like `npm start`, but also attempts to open your app on a connected Android devi
 
 1. Make sure that you can run adb from your terminal.
 2. Open Genymotion and navigate to `Settings -> ADB`. Select �Use custom Android SDK tools� and update with your [Android SDK directory](https://stackoverflow.com/questions/25176594/android-sdk-location).
+
+Here you have a link to a official guide for [building react native from source](https://facebook.github.io/react-native/docs/building-from-source.html)
+
+Make sure that you install the NDK version linked in the guide, other versions could not work for this purpose.
 
 ##### Using Genymotion's `adb`
 

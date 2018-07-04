@@ -6,6 +6,9 @@
 # dependencies
 /node_modules
 
+#Android local properties
+/android/local.properties
+
 # misc
 .env.local
 .env.development.local
